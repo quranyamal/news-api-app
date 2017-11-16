@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tangaya.newsapi.MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/showNews_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goto news"
+            android:onClick="gotoNews"/>
+
+        <Button
+            android:id="@+id/getJson_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Json"
+            android:onClick="getJson"/>
+
+        <Button
+            android:id="@+id/checkParsing_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Parsing"
+            android:onClick="checkParsing"/>
+
+        <TextView
+            android:id="@+id/json_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="JSON: -"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
