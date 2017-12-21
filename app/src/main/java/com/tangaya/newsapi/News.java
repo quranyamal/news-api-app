@@ -1,29 +1,58 @@
 package com.tangaya.newsapi;
 
+        import java.util.List;
+        import com.google.gson.annotations.Expose;
+        import com.google.gson.annotations.SerializedName;
+
 /**
- * Created by amal on 11/15/2017.
+ * Created by amal on 12/16/2017.
  */
 
 public class News {
-    private String imageSrc;
-    private String title;
-    private String content;
 
-    public News(String imageSrc, String title, String content) {
-        this.imageSrc = imageSrc;
-        this.title = title;
-        this.content = content;
+    @SerializedName("status")
+    @Expose
+    private String status;
+    @SerializedName("source")
+    @Expose
+    private String source;
+    @SerializedName("sortBy")
+    @Expose
+    private String sortBy;
+    @SerializedName("articles")
+    @Expose
+    private List<Article> articles = null;
+
+    public String getStatus() {
+        return status;
     }
 
-    public String getImageSrc() {
-        return imageSrc;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public String getTitle() {
-        return title;
+    public String getSource() {
+        return source;
     }
 
-    public String getContent() {
-        return content;
+    public void setSource(String source) {
+        this.source = source;
     }
+
+    public String getSortBy() {
+        return sortBy;
+    }
+
+    public void setSortBy(String sortBy) {
+        this.sortBy = sortBy;
+    }
+
+    public List<Article> getArticles() {
+        return articles;
+    }
+
+    public void setArticles(List<Article> articles) {
+        this.articles = articles;
+    }
+
 }

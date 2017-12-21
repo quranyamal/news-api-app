@@ -6,33 +6,46 @@ android:layout_width="match_parent"
 android:layout_height="wrap_content">
 
 <android.support.v7.widget.CardView
-    android:id="@+id/card_view"
+    android:id="@+id/news_card"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:layout_margin="10dp"
     android:elevation="3dp"
-    card_view:cardCornerRadius="3dp">
+    card_view:cardCornerRadius="3dp"
+    android:onClick="showArticle">
 
-    <LinearLayout android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/news_image"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:src="@drawable/turkey800"/>
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/turkey800"
+            android:transitionName="@string/transition_name_image"/>
 
         <TextView
             android:id="@+id/title_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="History of Istanbul"
-            android:textSize="28dp"
-            android:layout_margin="5dp"/>
+            android:textSize="26dp"
+            android:layout_margin="10dp"
+            android:layout_below="@id/news_image"
+            android:transitionName="@string/transition_name_title"/>
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/source_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/title_text"
+            android:layout_marginTop="10dp"
+            android:text="Source" />
+
+    </RelativeLayout>
 
 </android.support.v7.widget.CardView>
 

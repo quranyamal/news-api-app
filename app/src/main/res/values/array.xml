@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="news_sources">
+        <item>select source</item>
+        <item>detik.com</item>
+        <item>kompas.com</item>
+        <item>liputan6.com</item>
+        <item>viva.co.id</item>
+    </string-array>
+</resources>

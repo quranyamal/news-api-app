@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">NewsApi</string>
+    <string name="search_hint">petunjuk</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Settings</string>
+    <string name="action_new">Settings</string>
+    <string name="logo_desc">App logo</string>
+
+    <string name="transition_name_title">transition:TITLE</string>
+    <string name="transition_name_image">transition:IMAGE</string>
+
 </resources>
